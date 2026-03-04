@@ -52,6 +52,8 @@ jobs:
     runs-on: macos-14
     permissions:
       contents: write
+    env:
+      MAKEFLAGS: -j2
 
     steps:
       - name: Checkout Main
